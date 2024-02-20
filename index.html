@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll; /* Enable vertical scrolling */
+        }
+        header {
+            background-color: #0091fffd;
+            color: #000000;
+            padding: 10px 20px;
+            text-align: left;
+        }
+        section {
+            height: 100vh; /* Set section height to viewport height */
+            overflow-y: auto; /* Enable section-specific scrolling */
+            padding: 20px; /* Add padding to content */
+        }
+        .geo {
+        font-style: italic;
+        font-weight: 200; 
+        margin-right: 10px; 
+        display: inline-block;
+        text-align: right;
+        width: 50%; 
+        }
+
+        .date {
+        display: inline-block;
+        font-weight: 200;
+        font-style: italic;
+        text-align: right;
+        }     
+        nav {
+            background-color: #0091fffd;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chen Ling</h1>
+        <p>Senior at Columbia University</p>
+        <nav>     
+            <a href="cl4331@columbia.edu">cl4331@columbia.edu</a>
+            <a href="https://github.com/Chenling8181">GitHub</a>
+            <a href="https://www.linkedin.com/in/chen-ling-castle/">LinkedIn</a>
+            <a href="#education">Education</a>
+            <a href="#technical-skills">Technical Skills</a>
+            <a href="#professional-experience">Professional Experience</a>       
+        </nav>
+    </header>
+
+    <main>
+        <section id="education">
+            <h2>Education</h2>
+            <div>
+                <h3>Columbia University <span class="geo">New York, NY</span><span class="date">SEP 2022 - MAY 2024</span></h3>
+                <p><strong>Bachelor of Science; Major: Operations Research Financial Engineering</strong></p>
+                <p>GPA: 3.8/4.0, Dean’s List First Honors</p>
+                <p>Relevant Coursework: Optimizations, Stochastic Calculus, Simulation Modeling, Pricing Models, Asset Allocation, Econometrics, Corporate Finance</p>
+            </div>
+            <div>
+                <h3>Fordham University <span class="geo">New York, NY</span><span class="date">SEP 2019 - MAY 2022</span></h3>
+                <p><strong>Bachelor of Science; Major: Math & Computer Info Science</strong></p>
+                <p>GPA: 3.9/4.0, Dean’s List First Honors</p>
+                <p>Relevant Coursework: Data Structures, Computer Algorithms, Probability, Statistics, Linear Algebra, Numerical Analysis</p>
+            </div>
+        </section>  
+
+        <section id="technical-skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Languages: C++, Python, R, PostgreSQL, MySQL, MATLAB, HTML, Bash</li>
+                <li>Data Science & Machine Learning: Pandas, NumPy, SciPy, Gurobi, Scikit-Learn, Natural Language Toolkit</li>
+                <li>Visualization: Power BI, Tableau, Matplotlib, Bokeh, Seaborn, Folium, GeoJSON, Plotly</li>
+            </ul>
+        </section>
+
+        <section id="professional-experience">
+            <h2>Professional Experience</h2>
+            <div>
+                <h3>Minghong Information Technology Co., Ltd <span class="geo">Shanghai, China</span><span class="date">06/2023-09/2023</span></h3>
+                <h4>Quantitative Analyst</h4>
+                <ul>
+                    <li>Developed and implemented an execution algorithm tailored for soybean meal options trading on the Dalian Commodity Exchange.</li>
+                    <li>Conducted in-depth analysis of implied volatility pertaining to soybean meal options on the DCE, utilizing tick-period timeseries data. Designed and executed a trading algorithm aimed at enhancing overall trading surplus.</li>
+                    <li>Programmed a back-testing tool to evaluate the performance of the refined trading algorithms, utilizing data sourced from the company's database.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Fordham University <span class="geo">New York, NY</span></h3>
+                <div>
+                    <h4>Research Assistant, Smart Contracts’ Security Analysis Supervised by Dr. Sanchuan Chen</h4><span class="date">05/2022-09/2022</span>
+                    <ul>
+                        <li>Conducted in-depth analysis of smart contracts to identify and address security loopholes, including Block State Dependency and Integer Bugs, utilizing the Solidity-based libraries Smartian and Mythril.</li>
+                        <li>Enhanced the efficiency of Mythril through a combination of dynamic and static analysis, proposing a theoretical solution.</li>
+                        <li>Implemented an improved security analyzing tool on Linux virtual machines, facilitating the analysis of over 500 complex real-world smart contracts.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Teaching Assistant, Computer Science Department <span class="date">09/2021-06/2022</span></h4>
+                    <ul>
+                        <li>Hosted office hours and tutoring sessions to assist students with Data Structures and Algorithms.</li>
+                        <li>Assessed and graded weekly homework assignments as well as monthly quizzes to track and evaluate student progress effectively.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>IT Team Member, Fordham IT <span class="date">09/2020-09/2021</span></h4>
+                    <ul>
+                        <li>Provided audio, video, and multimedia resources to Fordham faculty and students.</li>
+                        <li>Identified operational and technical issues, and proposed solutions to end-users.</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h3>Intel <span class="geo">Shanghai, China</span><span class="date">06/2017-09/2017</span></h3>
+                <p>Network Software Developer</p>
+                <ul>
+                    <li>Conducted performance optimization on existing products within virtual Linux environments.</li>
+                    <li>Contributed C++ based code blocks implemented within the team’s portfolio.</li>
+                </ul>
+            </div>
+        </section>
+        
+              
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
