@@ -24,6 +24,9 @@
             overflow-y: auto; /* Enable section-specific scrolling */
             padding: 20px; /* Add padding to content */
         }
+        .active {
+            display: block; /* Show the active section */
+        }
         .geo {
         font-style: italic;
         font-weight: 200; 
@@ -59,14 +62,14 @@
             <a href="cl4331@columbia.edu">cl4331@columbia.edu</a>
             <a href="https://github.com/Chenling8181">GitHub</a>
             <a href="https://www.linkedin.com/in/chen-ling-castle/">LinkedIn</a>
-            <a href="#education">Education</a>
-            <a href="#technical-skills">Technical Skills</a>
-            <a href="#professional-experience">Professional Experience</a>       
+            <a href="#" onclick="showSection('education')">Education</a>
+            <a href="#" onclick="showSection('technical-skills')">Technical Skills</a>
+            <a href="#" onclick="showSection('professional-experience')">Professional Experience</a>
         </nav>
     </header>
 
     <main>
-        <section id="education">
+        <section id="education" class="active">
             <h2>Education</h2>
             <div>
                 <h3>Columbia University <span class="geo">New York, NY</span><span class="date">Sep 2022 - May 2024</span></h3>
@@ -82,7 +85,7 @@
             </div>
         </section>  
 
-        <section id="technical-skills">
+        <section id="technical-skills" class="active">
             <h2>Technical Skills</h2>
             <ul>
                 <li>Languages: C++, Python, R, PostgreSQL, MySQL, MATLAB, HTML, Bash</li>
@@ -91,7 +94,7 @@
             </ul>
         </section>
 
-        <section id="professional-experience">
+        <section id="professional-experience" class="active">
             <h2>Professional Experience</h2>
             <div>
                 <h3>Minghong Information Technology Co., Ltd <span class="geo">Shanghai, China</span><span class="date">Jun 2023 - Sep 2023</span></h3>
@@ -139,8 +142,19 @@
         
               
     </main>
-    <footer>
-        
+    <footer>      
     </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
 </body>
 </html>
