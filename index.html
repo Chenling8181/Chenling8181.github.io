@@ -54,7 +54,7 @@
 <body>
     <header>
         <h1>Chen Ling</h1>
-        <p>Senior at Columbia University</p>
+        <p>Student at Columbia University</p>
         <nav>     
             <a href="cl4331@columbia.edu">cl4331@columbia.edu</a>
             <a href="https://github.com/Chenling8181">GitHub</a>
@@ -142,21 +142,5 @@
     <footer>
         
     </footer>
-    <script>
-        // Smooth scroll to section on nav link click
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-
-                window.scrollTo({
-                    top: targetSection.offsetTop,
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
