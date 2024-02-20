@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Chen Ling</title>
     <style>
         /* Add your CSS styles here */
         body {
@@ -69,13 +69,13 @@
         <section id="education">
             <h2>Education</h2>
             <div>
-                <h3>Columbia University <span class="geo">New York, NY</span><span class="date">SEP 2022 - MAY 2024</span></h3>
+                <h3>Columbia University <span class="geo">New York, NY</span><span class="date">Sep 2022 - May 2024</span></h3>
                 <p><strong>Bachelor of Science; Major: Operations Research Financial Engineering</strong></p>
                 <p>GPA: 3.8/4.0, Dean’s List First Honors</p>
                 <p>Relevant Coursework: Optimizations, Stochastic Calculus, Simulation Modeling, Pricing Models, Asset Allocation, Econometrics, Corporate Finance</p>
             </div>
             <div>
-                <h3>Fordham University <span class="geo">New York, NY</span><span class="date">SEP 2019 - MAY 2022</span></h3>
+                <h3>Fordham University <span class="geo">New York, NY</span><span class="date">Sep 2019 - May 2022</span></h3>
                 <p><strong>Bachelor of Science; Major: Math & Computer Info Science</strong></p>
                 <p>GPA: 3.9/4.0, Dean’s List First Honors</p>
                 <p>Relevant Coursework: Data Structures, Computer Algorithms, Probability, Statistics, Linear Algebra, Numerical Analysis</p>
@@ -94,7 +94,7 @@
         <section id="professional-experience">
             <h2>Professional Experience</h2>
             <div>
-                <h3>Minghong Information Technology Co., Ltd <span class="geo">Shanghai, China</span><span class="date">06/2023-09/2023</span></h3>
+                <h3>Minghong Information Technology Co., Ltd <span class="geo">Shanghai, China</span><span class="date">Jun 2023 - Sep 2023</span></h3>
                 <h4>Quantitative Analyst</h4>
                 <ul>
                     <li>Developed and implemented an execution algorithm tailored for soybean meal options trading on the Dalian Commodity Exchange.</li>
@@ -103,9 +103,9 @@
                 </ul>
             </div>
             <div>
-                <h3>Fordham University <span class="geo">New York, NY</span></h3>
+                <h3>Fordham University <span class="geo">New York, NY</span><span class="date">SEP 2020 - Sep 2022</span></h3>
                 <div>
-                    <h4>Research Assistant, Smart Contracts’ Security Analysis Supervised by Dr. Sanchuan Chen</h4><span class="date">05/2022-09/2022</span>
+                    <h4>Research Assistant, Smart Contracts’ Security Analysis Supervised by Dr. Sanchuan Chen<span class="date">May 2022 - Sep 2022</span></h4>
                     <ul>
                         <li>Conducted in-depth analysis of smart contracts to identify and address security loopholes, including Block State Dependency and Integer Bugs, utilizing the Solidity-based libraries Smartian and Mythril.</li>
                         <li>Enhanced the efficiency of Mythril through a combination of dynamic and static analysis, proposing a theoretical solution.</li>
@@ -113,14 +113,14 @@
                     </ul>
                 </div>
                 <div>
-                    <h4>Teaching Assistant, Computer Science Department <span class="date">09/2021-06/2022</span></h4>
+                    <h4>Teaching Assistant, Computer Science Department <span class="date">Sep 2021 - Jun 2022</span></h4>
                     <ul>
                         <li>Hosted office hours and tutoring sessions to assist students with Data Structures and Algorithms.</li>
                         <li>Assessed and graded weekly homework assignments as well as monthly quizzes to track and evaluate student progress effectively.</li>
                     </ul>
                 </div>
                 <div>
-                    <h4>IT Team Member, Fordham IT <span class="date">09/2020-09/2021</span></h4>
+                    <h4>IT Team Member, Fordham IT <span class="date">Sep 2020 - Sep 2021</span></h4>
                     <ul>
                         <li>Provided audio, video, and multimedia resources to Fordham faculty and students.</li>
                         <li>Identified operational and technical issues, and proposed solutions to end-users.</li>
@@ -128,7 +128,7 @@
                 </div>
             </div>
             <div>
-                <h3>Intel <span class="geo">Shanghai, China</span><span class="date">06/2017-09/2017</span></h3>
+                <h3>Intel <span class="geo">Shanghai, China</span><span class="date">Jun 2017 - Sep 2017</span></h3>
                 <p>Network Software Developer</p>
                 <ul>
                     <li>Conducted performance optimization on existing products within virtual Linux environments.</li>
@@ -142,5 +142,21 @@
     <footer>
         
     </footer>
+    <script>
+        // Smooth scroll to section on nav link click
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
